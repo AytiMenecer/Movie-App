@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navi START*/
+
+.naviContainer {
+    background: #212529;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 240px;
+}
+
+.navi-info {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.logo {
+    color: #fa4753;
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.giFilm {
+    font-size: 45px;
+}
+
+.navi-info li {
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s;
+    font-size: 25px
+}
+
+.navi-info li:hover {
+    color: #fa4753;
+    cursor: pointer;
+}
+
+.sign {
+    color: white;
+    font-size: 26px;
+}
+
+.sign button {
+    width: 110px;
+    height: 36px;
+    margin-left: 10px;
+    background: #fa4753;
+    border: 2px solid #fa4753;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.profile {
+    width: 17%;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sign a {
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+
+/* From uiverse.io by @Cornerstone-04 */
+
+.input {
+    max-width: 190px;
+    height: 30px;
+    border: 2px solid transparent;
+    outline: none;
+    border-bottom: 2px solid #3f3f3f;
+    caret-color: #3f3f3f;
+    background-color: #212121;
+    padding: 5px;
+    transition: .5s linear;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.input:focus {
+    border: 2px solid #fa4753;
+    caret-color: #fa4753;
+    color: #fa4753;
+    box-shadow: 4px 4px 10px #070707;
+}
+
+.input:focus::placeholder {
+    color: #fa4753;
+}
+
+
+/* Navi END */
+
+
+/* Movie List Card Container START */
+
+.card {
+    width: 320px;
+    height: 445px;
+    border-radius: 20px;
+    transition: all .3s;
+    margin-bottom: 80px;
+}
+
+.card2 {
+    width: 320px;
+    height: 445px;
+    background: #1C1F26;
+    border-radius: 16px;
+    transition: all .2s;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+
+/* Movie List Card Container END */
+
+
+/* movie-list-container START*/
+
+body {
+    background-color: #0E1217;
+}
+
+.movie-list-container {
+    background: #0E1217;
+    padding: 80px 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* ---------------- */
+
+
+/* From uiverse.io by @alexruix */
+
+.card-img {
+    background-color: #ffcaa6;
+    height: 40%;
+    width: 96%;
+    margin: 10px auto;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+.card-info {
+    padding: 10px;
+}
+
+.card-footer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+
+/*Text*/
+
+#line {
+    margin: 10px 1px;
+}
+
+.star {
+    color: orange;
+    margin-right: 5px;
+}
+
+.text-title {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.6em;
+    line-height: 1.5;
+    color: #ffffffc5;
+}
+
+.favorite-button {
+    border: 2px solid white;
+    width: 60%;
+    line-height: 1.5;
+    color: #ffffffc5;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.text-language {
+    font-size: 30px;
+    border-radius: 50%;
+    padding-bottom: 10px;
+    color: #fa4753;
+    font-weight: 600;
+}
+
+.imdb {
+    color: #ffffffc5;
+    font-weight: 800;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*Button*/
+
+.card-button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+
+/*Hover*/
+
+.card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+    border: 1px solid #fa4753;
+    background-color: #fa4753;
+}
+
+.favorite-button:hover {
+    background: orange;
+    border: 1px solid orange;
+}
+
+
+/* movie-list-container END*/
